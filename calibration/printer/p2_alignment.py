@@ -112,7 +112,11 @@ def print_head(job, t, layer_idx):
     speed = 25.0 if layer_idx == 0 else 35.0
     job.tool(t)
     if layer_idx < 2:
-        pad(job, t, layer_idx, speed)
+        pad(job, t, layer_idx, speed)       # the pad also re-primes the head after a swap
+    else:
+        # layer 3: no pad, so re-prime with one line across the head's own pad first
+        x0, y0 = PAD_X[t] + 2, PAD_Y + PAD / 2
+        job.path([(x0, y0), (x0 + PAD - 4, y0)], LW, speed)
     if t == 0 and layer_idx < 2:
         for (xc, yc) in VERN.values():
             bars(job, main_comb_x(*xc), speed)

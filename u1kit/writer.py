@@ -504,6 +504,12 @@ class Job:
             f"; estimated printing time (normal mode) = {est}",
             f"; total layers count = {self.layer_num + 1}",
             "; CONFIG_BLOCK_START",
+            "; printer_model = Snapmaker U1",
+            f'; printer_settings_id = "Snapmaker U1 (0.4 nozzle)"',
+            f"; machine_tool_change_time = {M.TOOL_CHANGE_TIME_S:.0f}",
+            f"; printable_area = {M.BED_X_MIN}x{M.BED_Y_MIN},{M.BED_X_MAX}x{M.BED_Y_MIN},"
+            f"{M.BED_X_MAX}x{M.BED_Y_MAX},{M.BED_X_MIN}x{M.BED_Y_MAX}",
+            f"; printable_height = {M.MAX_Z + 0.05:.2f}",
             f"; filament_type = " + mlist("type", "PLA"),
             f"; filament_colour = " + mlist("colour", "#FFFFFF"),
             f"; filament_settings_id = " + ";".join(f'"{m.name}"' if m else '""' for m in mats),
