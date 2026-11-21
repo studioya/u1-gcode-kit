@@ -1,0 +1,20 @@
+# One physical spool. Fill in during M0 (spool log).
+id: clear-pla-head2
+name: Clear PLA
+type: PLA
+brand: null
+product: null
+colour_name: null
+lot: null
+bought: null
+loaded_in_head: null
+dried: {date: null, hours: null, temp_c: null, mass_before_g: null, mass_after_g: null}
+measured:
+  diameter_points_mm: []        # 5+ caliper readings, rotate 90 degrees between pairs
+  diameter_mean_mm: null
+  sample_length_mm: null        # length of the cut piece (aim for 1000)
+  sample_mass_g: null           # 0.01 g scale
+  linear_density_g_m: null      # = sample_mass_g / sample_length_mm * 1000
+  archimedes: {dry_g: null, submerged_reading_g: null}   # see docs/tests/M0
+  density_g_cm3: null
+notes: ""

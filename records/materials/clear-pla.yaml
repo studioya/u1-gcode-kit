@@ -1,0 +1,31 @@
+# Tuned settings for one material. status: provisional = copied from Snapmaker's
+# generic U1 profile, not yet calibrated on this printer.
+id: clear-pla
+name: Clear PLA
+type: PLA
+colour: "#DDEEFF"
+spool: clear-pla-head2
+status: provisional
+source: "Snapmaker Orca generic PLA @U1 0.4 nozzle (Nov 2026)"
+settings:
+  nozzle_temp: 210
+  first_layer_temp: 220
+  bed_temp: 60
+  first_layer_bed_temp: 60
+  flow_ratio: 0.98
+  density: 1.24
+  max_volumetric: 12
+  retract_length: 0.8
+  fan_min: 100
+  fan_max: 100
+  chamber: cool
+  pressure_advance: null      # set only after a PA test; printer's dynamic flow otherwise
+calibration:                    # filled by the kit, newest first
+  temperature_tower: null
+  max_flow: null
+  flow_ratio: null
+  pressure_advance: {per_head: {}}
+  retraction: null
+  cooling_overhang_bridge: null
+  check_coupon: null            # shrink_xy, shrink_z, clearance_fit_mm, hole_comp_mm
+log: []

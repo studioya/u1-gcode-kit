@@ -1,0 +1,22 @@
+# Any PLA without its own record yet (used for contrast colours in printer tests).
+id: generic-pla
+name: Generic PLA
+type: PLA
+colour: "#E04030"
+spool: null
+status: provisional
+source: "Snapmaker Orca generic PLA @U1 0.4 nozzle (Nov 2026)"
+settings:
+  nozzle_temp: 210
+  first_layer_temp: 220
+  bed_temp: 60
+  first_layer_bed_temp: 60
+  flow_ratio: 0.98
+  density: 1.24
+  max_volumetric: 12
+  retract_length: 0.8
+  fan_min: 100
+  fan_max: 100
+  chamber: cool
+  pressure_advance: null
+log: []

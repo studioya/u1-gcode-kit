@@ -1,0 +1,31 @@
+# Tuned settings for one material. status: provisional = copied from Snapmaker's
+# generic U1 profile, not yet calibrated on this printer.
+id: white-abs
+name: White ABS
+type: ABS
+colour: "#F7F7F2"
+spool: white-abs-head3
+status: provisional
+source: "Snapmaker Orca generic ABS @U1 0.4 nozzle (Nov 2026)"
+settings:
+  nozzle_temp: 260
+  first_layer_temp: 260
+  bed_temp: 100
+  first_layer_bed_temp: 100
+  flow_ratio: 0.95
+  density: 1.04
+  max_volumetric: 8
+  retract_length: 0.6
+  fan_min: 15
+  fan_max: 15
+  chamber: warm
+  pressure_advance: null      # set only after a PA test; printer's dynamic flow otherwise
+calibration:                    # filled by the kit, newest first
+  temperature_tower: null
+  max_flow: null
+  flow_ratio: null
+  pressure_advance: {per_head: {}}
+  retraction: null
+  cooling_overhang_bridge: null
+  check_coupon: null            # shrink_xy, shrink_z, clearance_fit_mm, hole_comp_mm
+log: []

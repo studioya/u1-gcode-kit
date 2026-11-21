@@ -1,0 +1,9 @@
+# What happens when two materials share a print. File name: <a>__<b>.yaml (alphabetical).
+a: null
+b: null
+bond: null            # none | weak | ok | strong  (from the M-pair peel test)
+interface_notes: ""
+prime_after_change_mm: null   # extra filament to push after a tool change before it looks right
+standby_ooze: null            # mm of ooze string / blob seen at standby temp
+standby_delta_c: null
+log: []

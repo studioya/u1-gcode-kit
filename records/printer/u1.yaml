@@ -1,0 +1,31 @@
+# Snapmaker U1 — measured values for THIS machine.
+# Factory/Snapmaker defaults live in u1kit/machine.py; this file records what we measured.
+machine: Snapmaker U1 (0.4 mm nozzles, standard flow)
+bed_plate: Textured PEI Plate   # confirm
+location: plywood cabinet, Tel Aviv (moved onto cabinet Nov 2026)
+
+built_in_calibrations:         # run from the printer screen; record date + result
+  home_and_leveling:      {last_run: null, notes: "startup wizard only"}
+  vibration_compensation: {last_run: null, x: {type: null, freq: null}, y: {type: null, freq: null},
+                           notes: "re-run after moving onto the cabinet; again after HULA feet / hood"}
+  toolhead_offset:        {last_run: null, notes: "verify with P2 alignment print"}
+  dynamic_flow:           {notes: "per head + material; forgotten on unload; read K values in Fluidd console"}
+
+heads:                         # T0..T3 = heads 1..4 on the screen
+  0: {feed_factor: null, z_check_mm: null, xy_vs_head1_mm: [0, 0], notes: ""}
+  1: {feed_factor: null, z_check_mm: null, xy_vs_head1_mm: null,   notes: ""}
+  2: {feed_factor: null, z_check_mm: null, xy_vs_head1_mm: null,   notes: ""}
+  3: {feed_factor: null, z_check_mm: null, xy_vs_head1_mm: null,   notes: ""}
+
+xy_frame:                      # P3, printed with the reference spool
+  last_run: null
+  outer_x_mm: null
+  outer_y_mm: null
+  diag_a_mm: null              # front-left to back-right
+  diag_b_mm: null              # front-right to back-left
+  scale_x: null
+  scale_y: null
+  skew_deg: null
+
+reference_spool: white-pla-head1   # all printer tests are judged against this spool
+log: []                            # - {date:, test:, result:, file:}
